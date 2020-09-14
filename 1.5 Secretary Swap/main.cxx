@@ -84,7 +84,6 @@ int main(int argc, char **argv)
         {
             std::swap(nums[i], nums[min]);
             fprintf(pFile, "Swap elements at indices %d and %d.\n", i + 1, min + 1);
-            std::cout << "Swap elements at indices " << i + 1 << " and " << min + 1 << "." << std::endl;
         }
     }
     fprintf(pFile, "No more swaps needed.\n");
