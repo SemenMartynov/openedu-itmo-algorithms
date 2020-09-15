@@ -18,10 +18,10 @@ int main(int argc, char **argv)
     std::istream_iterator<int> iis(fin);
     std::copy(iis, eos, std::back_inserter(nums));
 
-    int c = 0;
+    long long c = 0;
     for (size_t i = 0; i != nums.size(); ++i)
     {
-        for (size_t j = i; j != nums.size(); ++j)
+        for (size_t j = i + 1; j < nums.size(); ++j)
         {
             if (nums[i] > nums[j])
             {
